@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>customer-care</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <button class="dark-toggle" onclick="toggleDarkMode()">تبديل الوضع الليلي</button>
+    <button onclick="window.location.href='index.html'">العودة إلى الصفحة الرئيسية</button>
+    <h1>customer-care</h1>
+    <div class="grid"><div class='card' onclick="showDetails('عضوية الشركاء (فرسان / أميالي / نقاطي / تميز )')">عضوية الشركاء (فرسان / أميالي / نقاطي / تميز )</div>
+<div class='card' onclick="showDetails('عضوية يلو')">عضوية يلو</div>
+<div class='card' onclick="showDetails('عضوية العائلة')">عضوية العائلة</div></div>
+    <div id="details" style="margin-top:30px;"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

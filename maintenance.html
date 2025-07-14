@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>maintenance</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <button class="dark-toggle" onclick="toggleDarkMode()">تبديل الوضع الليلي</button>
+    <button onclick="window.location.href='index.html'">العودة إلى الصفحة الرئيسية</button>
+    <h1>maintenance</h1>
+    <div class="grid"><div class='card' onclick="showDetails('عطل فني بالسيارة (دمج عقود)')">عطل فني بالسيارة (دمج عقود)</div>
+<div class='card' onclick="showDetails('عطل فني بالسيارة (تعويض عن فاتورة سطحة )')">عطل فني بالسيارة (تعويض عن فاتورة سطحة )</div>
+<div class='card' onclick="showDetails('عطل فني بالسيارة ( تعويض بفاتورة قطع غيار )')">عطل فني بالسيارة ( تعويض بفاتورة قطع غيار )</div></div>
+    <div id="details" style="margin-top:30px;"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

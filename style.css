@@ -1,0 +1,54 @@
+
+:root {
+  --bg-light: #f9f9f9;
+  --bg-dark: #222;
+  --text-light: #000;
+  --text-dark: #fff;
+  --card-bg-light: #fff;
+  --card-bg-dark: #333;
+}
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-light);
+  direction: rtl;
+}
+.dark-mode {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+.card {
+  background-color: var(--card-bg-light);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.dark-mode .card {
+  background-color: var(--card-bg-dark);
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.dark-toggle {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffc107;
+  cursor: pointer;
+  font-size: 16px;
+}
