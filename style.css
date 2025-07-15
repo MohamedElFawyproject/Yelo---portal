@@ -1,54 +1,78 @@
-
 :root {
-  --bg-light: #f9f9f9;
-  --bg-dark: #222;
+  --yellow: #ffcc00;
+  --purple: #5c2d91;
+  --gray-dark: #222;
+  --white: #fff;
   --text-light: #000;
   --text-dark: #fff;
-  --card-bg-light: #fff;
-  --card-bg-dark: #333;
 }
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: var(--bg-light);
+  background-color: var(--white);
   color: var(--text-light);
   direction: rtl;
+  transition: background 0.3s, color 0.3s;
 }
 .dark-mode {
-  background-color: var(--bg-dark);
+  background-color: var(--gray-dark);
   color: var(--text-dark);
 }
 .container {
   max-width: 1200px;
   margin: auto;
   padding: 20px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--purple);
+  padding: 10px 20px;
+}
+.header img {
+  height: 50px;
+}
+h1 {
   text-align: center;
+  margin-top: 20px;
 }
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
+  margin-top: 30px;
 }
 .card {
-  background-color: var(--card-bg-light);
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  background-color: var(--white);
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   cursor: pointer;
-  transition: 0.3s;
-}
-.dark-mode .card {
-  background-color: var(--card-bg-dark);
+  transition: transform 0.2s;
 }
 .card:hover {
-  transform: scale(1.05);
+  transform: translateY(-5px);
+}
+.dark-mode .card {
+  background-color: #333;
 }
 .dark-toggle {
-  margin-bottom: 20px;
-  padding: 10px 20px;
+  background-color: var(--yellow);
   border: none;
-  border-radius: 8px;
-  background-color: #ffc107;
+  padding: 10px 20px;
+  border-radius: 10px;
   cursor: pointer;
-  font-size: 16px;
+  font-weight: bold;
+}
+button.back-home {
+  margin-top: 20px;
+  background: none;
+  border: 2px solid var(--yellow);
+  color: inherit;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
 }

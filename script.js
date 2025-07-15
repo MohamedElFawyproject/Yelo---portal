@@ -1,6 +1,11 @@
-
 function toggleDarkMode() {
-  document.body.classList.toggle('dark-mode');
+  const isDark = document.body.classList.toggle('dark-mode');
+  localStorage.setItem('darkMode', isDark);
+}
+window.onload = function() {
+  if (localStorage.getItem('darkMode') === 'true') {
+    document.body.classList.add('dark-mode');
+  }
 }
 function showDetails(sub) {
   const container = document.getElementById('details');
