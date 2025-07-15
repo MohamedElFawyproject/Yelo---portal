@@ -1,3 +1,4 @@
+/* style.css - تنسيقات البوابة */
 :root {
   --yellow: #ffcc00;
   --purple: #5c2d91;
@@ -6,6 +7,7 @@
   --text-light: #000;
   --text-dark: #fff;
 }
+
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
@@ -14,15 +16,18 @@ body {
   direction: rtl;
   transition: background 0.3s, color 0.3s;
 }
+
 .dark-mode {
   background-color: var(--gray-dark);
   color: var(--text-dark);
 }
+
 .container {
   max-width: 1200px;
   margin: auto;
   padding: 20px;
 }
+
 .header {
   display: flex;
   align-items: center;
@@ -30,19 +35,23 @@ body {
   background-color: var(--purple);
   padding: 10px 20px;
 }
+
 .header img {
   height: 50px;
 }
+
 h1 {
   text-align: center;
   margin-top: 20px;
 }
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
   margin-top: 30px;
 }
+
 .card {
   background-color: var(--white);
   padding: 25px;
@@ -53,12 +62,16 @@ h1 {
   cursor: pointer;
   transition: transform 0.2s;
 }
+
 .card:hover {
   transform: translateY(-5px);
 }
+
 .dark-mode .card {
   background-color: #333;
+  color: var(--text-dark);
 }
+
 .dark-toggle {
   background-color: var(--yellow);
   border: none;
@@ -67,6 +80,7 @@ h1 {
   cursor: pointer;
   font-weight: bold;
 }
+
 button.back-home {
   margin-top: 20px;
   background: none;

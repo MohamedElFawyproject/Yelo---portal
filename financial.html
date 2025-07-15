@@ -1,9 +1,10 @@
+<!-- financial.html - صفحة الإدارة المالية -->
 <!DOCTYPE html>
 <html lang="ar">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>إدارة مالية</title>
+  <title>الإدارة المالية</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -12,19 +13,14 @@
     <button class="dark-toggle" onclick="toggleDarkMode()">تبديل الوضع الليلي</button>
   </div>
   <div class="container">
-    <h1>إدارة مالية</h1>
+    <h1>الإدارة المالية</h1>
     <div class="grid">
       <div class="card" onclick="showDetails('تأمين دبي / تحويل بنكي')">تأمين دبي / تحويل بنكي</div>
       <div class="card" onclick="showDetails('تأمين السعودية / نقدًا')">تأمين السعودية / نقدًا</div>
-      <div class="card" onclick="showDetails('تأمين دبي/ نقداً - تعميد فرع')">تأمين دبي/ نقداً - تعميد فرع</div>
-      <div class="card" onclick="showDetails('تأمين دبي/بطاقة ائتمانية')">تأمين دبي/بطاقة ائتمانية</div>
-      <div class="card" onclick="showDetails('تامين السعودية هولد')">تامين السعودية هولد</div>
       <div class="card" onclick="showDetails('استرداد مدفوعات حجز')">استرداد مدفوعات حجز</div>
-      <div class="card" onclick="showDetails('استرداد مبلغ حادث/ تلفيات')">استرداد مبلغ حادث/ تلفيات</div>
-      <div class="card" onclick="showDetails('طلب استفسار مالي')">طلب استفسار مالي</div>
     </div>
     <div id="details" style="margin-top: 40px;"></div>
-    <button class="back-home" onclick="location.href='index.html'">↩ العودة إلى الصفحة الرئيسية</button>
+    <button onclick="location.href='index.html'">↩ العودة إلى الصفحة الرئيسية</button>
   </div>
   <script src="script.js"></script>
 </body>
