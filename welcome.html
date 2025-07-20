@@ -1,21 +1,32 @@
+<!-- welcome.html - صفحة الترحيب بموقع بوابة موظفي يلو -->
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>مرحبًا بكم في بوابة موظفي يلو</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="header">
     <img src="logo.png" alt="Yelo Logo">
     <button class="dark-toggle" onclick="toggleDarkMode()">تبديل الوضع الليلي</button>
   </div>
-  <div class="container" style="text-align:center; margin-top: 50px;">
+  <div class="container" style="text-align: center; margin-top: 80px;">
     <h1>مرحبًا بكم في بوابة موظفي يلو</h1>
     <p>يرجى الضغط على الزر أدناه للدخول إلى البوابة الرئيسية</p>
-    <button onclick="location.href='index.html'" class="dark-toggle">الدخول إلى البوابة</button>
+    <button onclick="location.href='index.html'" class="dark-toggle" style="margin-top: 20px;">الدخول إلى البوابة</button>
   </div>
-  <script src="script.js"></script>
+  <script>
+    function toggleDarkMode() {
+      const isDark = document.body.classList.toggle('dark-mode');
+      localStorage.setItem('darkMode', isDark);
+    }
+    window.onload = function () {
+      if (localStorage.getItem('darkMode') === 'true') {
+        document.body.classList.add('dark-mode');
+      }
+    };
+  </script>
 </body>
 </html>
