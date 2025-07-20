@@ -1,27 +1,51 @@
-<!-- customer-care.html - صفحة إدارة رعاية العملاء -->
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>إدارة رعاية العملاء</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إدارة رعاية العملاء - بوابة يلو</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body>
-  <div class="header">
-    <img src="logo.png" alt="Yelo Logo">
-    <button class="dark-toggle" onclick="toggleDarkMode()">تبديل الوضع الليلي</button>
-  </div>
-  <div class="container">
-    <h1>إدارة رعاية العملاء</h1>
-    <div class="grid">
-      <div class="card" onclick="showDetails('عضوية الشركاء (فرسان / أميالي / نقاطي / تميز )')">عضوية الشركاء (فرسان / أميالي / نقاطي / تميز )</div>
-      <div class="card" onclick="showDetails('عضوية يلو')">عضوية يلو</div>
-      <div class="card" onclick="showDetails('عضوية العائلة')">عضوية العائلة</div>
+<body data-department="customer_care">
+    <header>
+        <div class="logo-container">
+            <img src="assets/yelo_logo.png" alt="Yelo Company Logo" class="logo">
+            <h1>إدارة رعاية العملاء</h1>
+        </div>
+        <button class="dark-mode-toggle">
+            <span class="icon"><i class="fas fa-moon"></i></span>
+            وضع ليلي
+        </button>
+    </header>
+
+    <div class="container">
+        <h2>التصنيفات الفرعية لإدارة رعاية العملاء</h2>
+        <div class="card-grid">
+            <div class="card" data-sub-category="عضوية الشركاء (فرسان / أميالي / نقاطي / تميز )">
+                <h3>عضوية الشركاء (فرسان / أميالي / نقاطي / تميز )</h3>
+            </div>
+            <div class="card" data-sub-category="عضوية يلو">
+                <h3>عضوية يلو</h3>
+            </div>
+            <div class="card" data-sub-category="عضوية العائلة">
+                <h3>عضوية العائلة</h3>
+            </div>
+        </div>
+
+        <div id="dynamicContentArea" class="dynamic-content">
+            </div>
+
+        <div class="back-button-container">
+            <a href="index.html" class="back-button">العودة للصفحة الرئيسية</a>
+        </div>
     </div>
-    <div id="details" style="margin-top: 40px;"></div>
-    <button onclick="location.href='index.html'">↩ العودة إلى الصفحة الرئيسية</button>
-  </div>
-  <script src="script.js"></script>
+
+    <footer>
+        <p>&copy; 2025 بوابة يلو للشكاوى والطلبات. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

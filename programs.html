@@ -1,30 +1,60 @@
-<!-- programs.html - صفحة إدارة البرامج -->
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>إدارة البرامج</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إدارة البرامج - بوابة يلو</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body>
-  <div class="header">
-    <img src="logo.png" alt="Yelo Logo">
-    <button class="dark-toggle" onclick="toggleDarkMode()">تبديل الوضع الليلي</button>
-  </div>
-  <div class="container">
-    <h1>إدارة البرامج</h1>
-    <div class="grid">
-      <div class="card" onclick="showDetails('طلبات سمة (إزالة من قائمة سمة عقد مسدد )')">طلبات سمة (إزالة من قائمة سمة عقد مسدد )</div>
-      <div class="card" onclick="showDetails('مشكلة تنفيذ حجز')">مشكلة تنفيذ حجز</div>
-      <div class="card" onclick="showDetails('مشكلة تمديد عقد')">مشكلة تمديد عقد</div>
-      <div class="card" onclick="showDetails('مشكلة تسجيل الدخول من الموقع او التطبيق')">مشكلة تسجيل الدخول من الموقع او التطبيق</div>
-      <div class="card" onclick="showDetails('مشكلة تعديل حجز')">مشكلة تعديل حجز</div>
-      <div class="card" onclick="showDetails('مشكلة السداد عبر الموقع او التطبيق')">مشكلة السداد عبر الموقع او التطبيق</div>
+<body data-department="programs">
+    <header>
+        <div class="logo-container">
+            <img src="assets/yelo_logo.png" alt="Yelo Company Logo" class="logo">
+            <h1>إدارة البرامج</h1>
+        </div>
+        <button class="dark-mode-toggle">
+            <span class="icon"><i class="fas fa-moon"></i></span>
+            وضع ليلي
+        </button>
+    </header>
+
+    <div class="container">
+        <h2>التصنيفات الفرعية لإدارة البرامج</h2>
+        <div class="card-grid">
+            <div class="card" data-sub-category="طلبات سمة (إزالة من قائمة سمة عقد مسدد )">
+                <h3>طلبات سمة (إزالة من قائمة سمة عقد مسدد )</h3>
+            </div>
+            <div class="card" data-sub-category="مشكلة تنفيذ حجز">
+                <h3>مشكلة تنفيذ حجز</h3>
+            </div>
+            <div class="card" data-sub-category="مشكلة تمديد عقد">
+                <h3>مشكلة تمديد عقد</h3>
+            </div>
+            <div class="card" data-sub-category="مشكلة تسجيل الدخول من الموقع او التطبيق">
+                <h3>مشكلة تسجيل الدخول من الموقع او التطبيق</h3>
+            </div>
+            <div class="card" data-sub-category="مشكلة تعديل حجز">
+                <h3>مشكلة تعديل حجز</h3>
+            </div>
+            <div class="card" data-sub-category="مشكلة السداد عبر الموقع او التطبيق">
+                <h3>مشكلة السداد عبر الموقع او التطبيق</h3>
+            </div>
+        </div>
+
+        <div id="dynamicContentArea" class="dynamic-content">
+            </div>
+
+        <div class="back-button-container">
+            <a href="index.html" class="back-button">العودة للصفحة الرئيسية</a>
+        </div>
     </div>
-    <div id="details" style="margin-top: 40px;"></div>
-    <button onclick="location.href='index.html'">↩ العودة إلى الصفحة الرئيسية</button>
-  </div>
-  <script src="script.js"></script>
+
+    <footer>
+        <p>&copy; 2025 بوابة يلو للشكاوى والطلبات. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
