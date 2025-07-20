@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>بوابة يلو للشكاوى والطلبات</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>مرحبًا بكم في بوابة موظفي يلو</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="welcome-container">
-        <img src="assets/yelo_logo.png" alt="Yelo Company Logo" class="logo">
-        <h1>أهلاً بك في بوابة يلو للشكاوى والطلبات</h1>
-        <p>بوابتك الداخلية لتصنيف الشكاوى والطلبات بفعالية.</p>
-        <a href="index.html" class="welcome-button">الدخول للبوابة</a>
-    </div>
-
-    <script src="js/main.js"></script>
+  <div class="header">
+    <img src="logo.png" alt="Yelo Logo">
+    <button class="dark-toggle" onclick="toggleDarkMode()">تبديل الوضع الليلي</button>
+  </div>
+  <div class="container" style="text-align:center; margin-top: 50px;">
+    <h1>مرحبًا بكم في بوابة موظفي يلو</h1>
+    <p>يرجى الضغط على الزر أدناه للدخول إلى البوابة الرئيسية</p>
+    <button onclick="location.href='index.html'" class="dark-toggle">الدخول إلى البوابة</button>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>إدارة البرامج</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="header">
+    <img src="logo.png" alt="Yelo Logo">
+    <button class="dark-toggle" onclick="toggleDarkMode()">تبديل الوضع الليلي</button>
+  </div>
+  <div class="container">
+    <h1>إدارة البرامج</h1>
+    <div class="grid">
+      <div class="card" onclick="showDetails('طلبات سمة (إزالة من قائمة سمة عقد مسدد )')">طلبات سمة (إزالة من قائمة سمة عقد مسدد )</div>
+      <div class="card" onclick="showDetails('مشكلة تنفيذ حجز')">مشكلة تنفيذ حجز</div>
+      <div class="card" onclick="showDetails('مشكلة تمديد عقد')">مشكلة تمديد عقد</div>
+      <div class="card" onclick="showDetails('مشكلة تسجيل الدخول من الموقع او التطبيق')">مشكلة تسجيل الدخول من الموقع او التطبيق</div>
+      <div class="card" onclick="showDetails('مشكلة تعديل حجز')">مشكلة تعديل حجز</div>
+      <div class="card" onclick="showDetails('مشكلة السداد عبر الموقع او التطبيق')">مشكلة السداد عبر الموقع او التطبيق</div>
+    </div>
+    <div id="details" style="margin-top: 40px;"></div>
+    <button class="back-home" onclick="location.href='index.html'">↩ العودة إلى الصفحة الرئيسية</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,58 +1,29 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الصفحة الرئيسية - بوابة يلو</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>بوابة موظفي يلو</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body data-department="index">
-    <header>
-        <div class="logo-container">
-            <img src="assets/yelo_logo.png" alt="Yelo Company Logo" class="logo">
-            <h1>بوابة يلو</h1>
-        </div>
-        <button class="dark-mode-toggle">
-            <span class="icon"><i class="fas fa-moon"></i></span>
-            وضع ليلي
-        </button>
-    </header>
-
-    <div class="container">
-        <h2>الإدارات الرئيسية</h2>
-        <div class="card-grid">
-            <a href="financial.html" class="card">
-                <h3>إدارة مالية</h3>
-            </a>
-            <a href="legal.html" class="card">
-                <h3>الإدارة القانونية</h3>
-            </a>
-            <a href="operations.html" class="card">
-                <h3>إدارة التشغيل</h3>
-            </a>
-            <a href="follow_up_collection.html" class="card">
-                <h3>إدارة المتابعة والتحصيل</h3>
-            </a>
-            <a href="programs.html" class="card">
-                <h3>إدارة البرامج</h3>
-            </a>
-            <a href="maintenance.html" class="card">
-                <h3>إدارة الصيانة</h3>
-            </a>
-            <a href="other_financial_requests.html" class="card">
-                <h3>طلبات مالية أخرى</h3>
-            </a>
-            <a href="customer_care.html" class="card">
-                <h3>إدارة رعاية العملاء</h3>
-            </a>
-        </div>
+<body>
+  <div class="header">
+    <img src="logo.png" alt="Yelo Logo">
+    <button class="dark-toggle" onclick="toggleDarkMode()">تبديل الوضع الليلي</button>
+  </div>
+  <div class="container">
+    <h1>الصفحة الرئيسية</h1>
+    <div class="grid">
+      <div class="card" onclick="location.href='_مالية.html'">إدارة مالية</div>
+      <div class="card" onclick="location.href='ال_القانونية.html'">الإدارة القانونية</div>
+      <div class="card" onclick="location.href='_التشغيل.html'">إدارة التشغيل</div>
+      <div class="card" onclick="location.href='_المتابعة_والتحصيل.html'">إدارة المتابعة والتحصيل</div>
+      <div class="card" onclick="location.href='_البرامج.html'">إدارة البرامج</div>
+      <div class="card" onclick="location.href='_الصيانة.html'">إدارة الصيانة</div>
+      <div class="card" onclick="location.href='طلبات_مالية_اخرى.html'">طلبات مالية أخرى</div>
+      <div class="card" onclick="location.href='_رعاية_العملاء_العملاء.html'">إدارة رعاية العملاء</div>
     </div>
-
-    <footer>
-        <p>&copy; 2025 بوابة يلو للشكاوى والطلبات. جميع الحقوق محفوظة.</p>
-    </footer>
-
-    <script src="js/main.js"></script>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
